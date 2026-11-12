@@ -11,4 +11,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  # ideas : refer to idea controller
+  # index : refer to its index action
+  root "ideas#index"
 end

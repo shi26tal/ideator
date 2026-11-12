@@ -10,4 +10,4 @@ bin/rails db:migrate
 # bundle install: Installs the Ruby gems your app needs.
 # assets:precompile: Prepares CSS and JavaScript for production.
 # assets:clean: Removes older compiled assets.
-# db:migrate: Applies database changes.
+# db:migrate: Applies  database changes.
