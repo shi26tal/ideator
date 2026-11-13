@@ -10,8 +10,33 @@ class IdeasController < ApplicationController
   # When handling information in the server, you should always use strong parameters to whitelist what data can go into your application.
   def create
     @idea = Idea.create(idea_params)
+    # validation
+    if @idea.valid?
+    else
+    end
     redirect_to root_path
     # send the user back to homepage after submitting form
+  end
+
+  # edit displays the existing idea in an edit form.
+  # update processes the submitted form and saves the changes.
+  def edit
+    @idea = Idea.find(params[:id])
+  end
+
+  def update
+     @idea = Idea.find(params[:id])
+    if @idea.update(idea_params)
+      redirect_to root_path
+    else
+      redirect_to edit_idea_path(params[:id])
+    end
+  end
+
+  def destroy
+  @idea = Idea.find(params[:id])
+  @idea.destroy
+  redirect_to root_path
   end
 
   private
@@ -20,3 +45,6 @@ class IdeasController < ApplicationController
     params.require(:idea).permit(:description, :author)
   end
 end
+
+
+# Controller:	Handles requests and decides what should happen

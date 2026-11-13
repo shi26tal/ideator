@@ -16,4 +16,7 @@ Rails.application.routes.draw do
   root "ideas#index"
   resources :ideas
   # Rails generates the standard CRUD routes for us.
+
+  get "about" => "static_pages#about"
+  get "random" => "static_pages#random"
 end
