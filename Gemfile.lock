@@ -315,6 +315,9 @@ GEM
       logger (~> 1.4)
       rubyzip (>= 1.2.2, < 4.0)
       websocket (~> 1.0)
+    simple_form (5.4.1)
+      actionpack (>= 7.0)
+      activemodel (>= 7.0)
     sshkit (1.25.1)
       base64
       logger
@@ -382,6 +385,7 @@ DEPENDENCIES
   rails (~> 8.1.4, >= 8.1.4.1)
   rubocop-rails-omakase
   selenium-webdriver
+  simple_form (~> 5.3)
   stimulus-rails
   thruster
   turbo-rails

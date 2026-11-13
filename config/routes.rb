@@ -14,4 +14,6 @@ Rails.application.routes.draw do
   # ideas : refer to idea controller
   # index : refer to its index action
   root "ideas#index"
+  resources :ideas
+  # Rails generates the standard CRUD routes for us.
 end

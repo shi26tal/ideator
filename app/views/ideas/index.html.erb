@@ -1,1 +1,35 @@
-<h1>This is my first app ever and I am super excited to become a coder</h1>
+<%= simple_form_for Idea.new do |f| %>
+  <%= f.input :description %>
+  <%= f.input :author %>
+  <%= f.submit 'Submit' %>
+<% end %>
+
+<div class="max-w-xl mx-auto">
+    <% @ideas.each do |idea| %>
+    <div class="rounded overflow-hidden shadow-lg">
+        <div class="px-6 py-8 h-full">
+            <div class="font-bold text-xl mb-2">
+                 <%= idea.description %>
+
+            </div>
+            <p class="text-sm text-gray-700">
+                <%= idea.author %>
+
+            </p>
+        </div>
+    </div>
+       
+        
+    <% end %>
+
+</div>
+
+
+
+<%# <%  %> 
+<%# this execute ruby code without displaying its result %>
+
+
+
+<%# <%=  %>
+<%# this execute ruby code and display its result in HTML %>
