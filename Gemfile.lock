@@ -202,6 +202,7 @@ GEM
     nokogiri (1.19.7-x86_64-linux-musl)
       racc (~> 1.4)
     ostruct (0.6.3)
+    pagy (6.5.0)
     parallel (2.3.0)
     parser (3.3.13.0)
       ast (~> 2.4.1)
@@ -379,6 +380,7 @@ DEPENDENCIES
   jbuilder
   jsbundling-rails
   kamal
+  pagy (~> 6.2)
   pg (~> 1.1)
   propshaft
   puma (>= 5.0)
